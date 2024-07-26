@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP ICON -->
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css'
+        integrity='sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=='
+        crossorigin='anonymous' />
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
+        integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
+        crossorigin='anonymous' />
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- HEADING -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-xl bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="img/duck.png" class="img-fluid" alt="Duck logo">
+                </a>
+
+                <!-- COLLAPSE NAVBAR -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page2.html">Anagrafica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <!-- SEARCH AREA -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control fw-semibold me-2 olacetext-dark bg-light" type="search"
+                            placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- MAIN TEXT -->
+        <div class="container py-4">
+            <div class="row">
+                <!-- MAIN HEADING -->
+                <div class="col">
+                    <h2>Nuovo Libro</h2>
+                </div>
+            </div>
+
+            <!-- FORM  -->
+            <!-- TEXT INPUT -->
+            <form class="row g-3 py-4">
+                <div class="col-6">
+                    <label for="inserici-nome-autore" class="form-label fs-5 fw-semibold">Nome Autore</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserici il nome dell'autore"
+                        id="inserici-nome-autore">
+                </div>
+                <div class="col-6">
+                    <label for="Inserici-cognome-autore" class="form-label fs-5 fw-semibold">Cognome Autore</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserici il congnome dell'autore"
+                        id="Inserici-cognome-autore">
+                </div>
+                <div class="col-12">
+                    <label for="titolo" class="form-label fs-5 fw-semibold">Titolo</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserici il titolo del libro"
+                        id="titolo">
+                    <span class="text-secondary fw-semibold">Titolo versione italiana
+                    </span>
+                </div>
+                <!-- SELECT FORM -->
+                <div class="col-12 col-lg-4">
+                    <label for="Genere" class="form-label fs-5 fw-semibold">Genere</label>
+                    <select id="Genere" class="form-select fw-semibold">
+                        <option>Scegli il genere</option>
+                        <option>Giallo</option>
+                        <option>Fantasy</option>
+
+                    </select>
+                </div>
+                <!-- TEXT INPUT -->
+                <div class="col-12 col-lg-4">
+                    <label for="Data-publicazione" class="form-label fs-5 fw-semibold">Anno di Publicazione</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserici l'anno"
+                        id="Data-publicazione">
+                </div>
+                <div class="col-12 col-lg-4 pb-4">
+                    <label for="ISBN-code" class="form-label fs-5 fw-semibold">ISBN#</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserici il codice ISBN#"
+                        id="ISBN-code">
+                </div>
+                <hr>
+                <!-- TEXT AREA -->
+                <div class="col-12 pt-3">
+                    <label for="Note" class="form-label fs-5 fw-semibold">Note</label>
+                    <textarea class="form-control fw-semibold" id="Note" placeholder="Inserici eventuali note sul libro"
+                        rows="5"></textarea>
+                </div>
+                <!-- CHECKBOX -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Check">
+                        <label class="form-check-label  fw-semibold" for="Check">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <!-- BTN BUTTON -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
