@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- BOOTSTRAP ICON -->
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css'
+        integrity='sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=='
+        crossorigin='anonymous' />
     <!-- BOOTSTRAP STYLESHEET -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
         integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
@@ -56,13 +61,255 @@
 
 
     <main>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand">Catologo Libri</a>
-                <button class="btn btn-primary" type="submit">Aggiungi libro</button>
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar">
+                        <a class="navbar-brand">Catologo Libri</a>
+                        <button class="btn btn-primary" type="submit">Aggiungi libro</button>
+                    </nav>
+
+                </div>
             </div>
-        </nav>
+
+
+
+            <div class="row ">
+                <div class="col">
+
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1"><strong>Titolo</strong></li>
+                        <li class="list-group-item d-none d-md-block"><strong>Data prestito</strong></li>
+                        <li class="list-group-item"><strong>Stato</strong></li>
+                        <li class="list-group-item border-bottom"><strong>Azioni</strong></li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">I pilastri della terra</li>
+                        <li class="list-group-item d-none d-md-block text-s">-</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Disponibile</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush flex-row">
+                        <li class="list-group-item flex-grow-1">An item</li>
+                        <li class="list-group-item d-none d-md-block">A second item</li>
+                        <li class="list-group-item"><span class="badge text-bg-success">Success</span></li>
+                        <li class="list-group-item border-bottom">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-trash3"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Quote
+                </div>
+                <div class="card-body">
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Quote
+                </div>
+                <div class="card-body">
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
     </main>
+
+
+
 
 
 
@@ -75,7 +322,9 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
         integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=='
-        crossorigin='anonymous'></script>
+        crossorigin='anonymous'>
+        </script>
+
 </body>
 
 </html>
