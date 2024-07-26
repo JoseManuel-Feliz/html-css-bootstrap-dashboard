@@ -2,3 +2,8 @@
 
     width: 60px;
 }
+
+.t-black>input::placeholder {
+    color: black;
+    ;
+}

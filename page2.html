@@ -99,14 +99,19 @@
                         <option>Scegli il genere</option>
                         <option>Giallo</option>
                         <option>Fantasy</option>
+                        <option>Romanzo</option>
+                        <option>Avventura</option>
+                        <option>Horror</option>
+                        <option>Fantascienza</option>
+                        <option>Biografia</option>
 
                     </select>
                 </div>
                 <!-- TEXT INPUT -->
                 <div class="col-12 col-lg-4">
                     <label for="Data-publicazione" class="form-label fs-5 fw-semibold">Anno di Publicazione</label>
-                    <input type="text" class="form-control fw-semibold" placeholder="Inserici l'anno"
-                        id="Data-publicazione">
+                    <input type="number" class="form-control fw-semibold" min="1500" max="2024"
+                        placeholder="Inserici l'anno" id="Data-publicazione">
                 </div>
                 <div class="col-12 col-lg-4 pb-4">
                     <label for="ISBN-code" class="form-label fs-5 fw-semibold">ISBN#</label>
@@ -137,6 +142,11 @@
 
         </div>
     </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
+        integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=='
+        crossorigin='anonymous'>
+        </script>
 </body>
 
 </html>
