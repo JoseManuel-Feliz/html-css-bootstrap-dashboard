@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Dashboard</title>
     <!-- BOOTSTRAP ICON -->
     <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css'
@@ -29,35 +29,37 @@
                     <img src="img/duck.png" class="img-fluid" alt="Duck logo">
                 </a>
 
-                <!-- COLLAPSE NAVBAR -->
+                <!-- TOGGLE BTN -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                     aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- COLLAPSE NAVBAR -->
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- CATALOGO LIBRI -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Catalogo Libri</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Catalogo Libri</a>
                         </li>
+
+                        <!-- ANAGRAFICA UTENTI -->
                         <li class="nav-item">
-                            <a class="nav-link" href="./page2.html">Anagrafica</a>
+                            <a class="nav-link" href="./page2.html">Anagrafica Utenti</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Utenti</a>
-                        </li>
+
+                        <!-- STORICO PRESTITI -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">Storico Prestiti</a>
                         </li>
+
+                        <!-- HELP -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">Help</a>
                         </li>
                     </ul>
-                    <!-- SEARCH AREA -->
-                    <form class="d-flex t-black" role="search">
-                        <input class="form-control fw-semibold me-2 bg-light" type="search" placeholder="Cerca..."
-                            aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Cerca</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
@@ -73,18 +75,22 @@
             </div>
 
             <!-- FORM  -->
-            <!-- TEXT INPUT -->
+            <!-- AUTHOR F-NAME -->
             <form class="row g-3 py-4">
                 <div class="col-6">
                     <label for="inserici-nome-autore" class="form-label fs-5 fw-semibold">Nome Autore</label>
                     <input type="text" class="form-control fw-semibold" placeholder="Inserici il nome dell'autore"
                         id="inserici-nome-autore">
                 </div>
+
+                <!-- AUTHOR L-NAME -->
                 <div class="col-6">
                     <label for="Inserici-cognome-autore" class="form-label fs-5 fw-semibold">Cognome Autore</label>
                     <input type="text" class="form-control fw-semibold" placeholder="Inserici il congnome dell'autore"
                         id="Inserici-cognome-autore">
                 </div>
+
+                <!-- BOOK TITLE -->
                 <div class="col-12">
                     <label for="titolo" class="form-label fs-5 fw-semibold">Titolo</label>
                     <input type="text" class="form-control fw-semibold" placeholder="Inserici il titolo del libro"
@@ -92,7 +98,7 @@
                     <span class="text-secondary fw-semibold">Titolo versione italiana
                     </span>
                 </div>
-                <!-- SELECT FORM -->
+                <!-- LITERARY GENRES -->
                 <div class="col-12 col-lg-4">
                     <label for="Genere" class="form-label fs-5 fw-semibold">Genere</label>
                     <select id="Genere" class="form-select fw-semibold">
@@ -107,19 +113,21 @@
 
                     </select>
                 </div>
-                <!-- TEXT INPUT -->
+                <!-- PUBLICATION DATE -->
                 <div class="col-12 col-lg-4">
                     <label for="Data-publicazione" class="form-label fs-5 fw-semibold">Anno di Publicazione</label>
                     <input type="number" class="form-control fw-semibold" min="1500" max="2024"
                         placeholder="Inserici l'anno" id="Data-publicazione">
                 </div>
+
+                <!-- ISBN CODE -->
                 <div class="col-12 col-lg-4 pb-4">
                     <label for="ISBN-code" class="form-label fs-5 fw-semibold">ISBN#</label>
                     <input type="text" class="form-control fw-semibold" placeholder="Inserici il codice ISBN#"
                         id="ISBN-code">
                 </div>
                 <hr>
-                <!-- TEXT AREA -->
+                <!-- COMMENTS -->
                 <div class="col-12 pt-3">
                     <label for="Note" class="form-label fs-5 fw-semibold">Note</label>
                     <textarea class="form-control fw-semibold" id="Note" placeholder="Inserici eventuali note sul libro"
@@ -143,6 +151,7 @@
         </div>
     </main>
 
+    <!-- BOOTSTRAP JS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
         integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=='
         crossorigin='anonymous'>
